@@ -1,0 +1,18 @@
+composer global require laravel/installer
+
+composer require laravel/ui
+php artisan ui bootstrap --auth
+npm install && npm run dev
+php artisan make:seeder DeveloperSeeder
+php artisan migrate:fresh
+php artisan db:seed
+composer require --dev "kitloong/laravel-migrations-generator"
+composer require barryvdh/laravel-debugbar --dev
+barryvdh/laravel-ide-helper
+
+
+
+composer require laravel/passport
+php artisan migrate
+php artisan passport:install
+php artisan passport:keys
